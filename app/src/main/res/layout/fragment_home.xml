@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/dingwei"
+            android:src="@drawable/dingwei"
+            android:layout_width="50dp"
+            android:layout_height="50dp"></ImageView>
+
+        <ImageView
+            android:id="@+id/sousuo"
+            android:layout_marginLeft="310dp"
+            android:src="@drawable/home_icon_search_entrance"
+            android:layout_width="50dp"
+            android:layout_height="50dp"></ImageView>
+    </LinearLayout>
+
+    <com.flyco.tablayout.SlidingTabLayout
+        app:tl_textSelectColor="#000000"
+        app:tl_textUnselectColor="#cccccc"
+        app:tl_indicator_color="#ff00"
+        android:id="@+id/tabss"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></com.flyco.tablayout.SlidingTabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vpers"
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></androidx.viewpager.widget.ViewPager>
+</LinearLayout>

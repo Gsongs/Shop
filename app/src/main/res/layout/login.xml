@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/shouye1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ImageView>
+    <ImageView
+        android:scaleType="center"
+
+        android:src="@drawable/tt"
+        android:layout_centerInParent="true"
+        android:layout_width="200dp"
+        android:layout_height="300dp"></ImageView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="170dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="200dp"
+        android:layout_height="50dp">
+        <Button
+            android:id="@+id/butongyi"
+            android:background="#EC8F8F"
+            android:text="不同意"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"></Button>
+        <Button
+            android:id="@+id/tongyi"
+            android:background="#E64A4A"
+            android:text="同意"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"></Button>
+    </LinearLayout>
+</RelativeLayout>
